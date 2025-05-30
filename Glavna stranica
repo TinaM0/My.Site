@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="file:///C:/Users/PC/Downloads/Dizajn%20bez%20naslova.svg"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Poslovna stranica koja objašnjava kako nastaje novac kroz centralne i komercijalne banke.">
+  <meta name="keywords" content="novac, ekonomija, banke, poslovna edukacija, financije">
+  <meta name="author" content="Tvoje Ime">
+  <title>Kako nastaje novac | Edukativni centar</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5e9d3;
+      color: #333;
+      line-height: 1.6;
+    }
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #355e3b;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+    }
+    .sidebar a {
+      padding: 10px 30px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      background-color: #355e3b;
+      border-radius: 5px;
+    }
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      background-color: #355e3b;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      z-index: 2;
+    }
+    .content {
+      transition: margin-left .5s;
+      padding: 20px;
+      margin-left: 0;
+    }
+    header {
+      background: linear-gradient(to right, #bfa46f, #94773e, #bfa46f);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 0 0 10px;
+    }
+    header p {
+      font-size: 1.2em;
+    }
+    header a {
+      margin-top: 20px;
+      display: inline-block;
+      background-color: #355e3b;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: bold;
+    }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+    }
+    section {
+      background: white;
+      padding: 30px;
+      margin-bottom: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      color: #2c3e50;
+      font-size: 1.8em;
+      border-left: 4px solid #2ecc71;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    footer {
+      background-color: #bfa46f;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #f5e9d3;
+      text-decoration: none;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    img, video {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+    iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div id="mySidebar" class="sidebar">
+    <a href="aplikacija.html" target="C:\Users\PC\Documents">Aplikacija</a>
+    <a href="tecajevi.html" target="iframe-sadrzaj">Tečajevi</a>
+    <a href="knjige.html" target="iframe-sadrzaj">Knjige</a>
+    <a href="kontakt.html" target="iframe-sadrzaj">Kontakt</a>
+  </div>
+
+  <button class="openbtn" onclick="toggleNav()">☰ Izbornik</button>
+
+  <div class="content">
+    <header>
+      <h1>Kako nastaje novac?</h1>
+      <p>Dobrodošli na edukativnu poslovnu stranicu gdje jasno objašnjavamo proces stvaranja novca.</p>
+      <a href="#vise">Saznaj više</a>
+    </header>
+
+    <main>
+      <section id="vise">
+        <h2>Vrste novca</h2>
+        <p>Novac može postojati u fizičkom (gotovinskom) i digitalnom (bezgotovinskom) obliku. U modernom financijskom sustavu većina novca je zapravo samo broj u računalnom sustavu banaka.</p>
+        <img src="https://boycewire.com/wp-content/uploads/2019/10/geronimo-giqueaux-Mp4Fq6zj6D4-unsplash-e1570821858575.jpg" alt="Vrste novca">
+      </section>
+
+      <section>
+        <h2>Kako nastaje gotovinski novac</h2>
+        <p>Gotovinski novac izdaje centralna banka, kao što je Hrvatska narodna banka (HNB). Ovaj novac se štampa i kuje pod strogom kontrolom, a zatim distribuira kroz komercijalne banke.</p>
+        <img src="https://www.tonerpartner.hr/userdata/articles/224/stovky-1.jpg" alt="Štamparija novca">
+      </section>
+
+      <section>
+        <h2>Kako nastaje bezgotovinski novac</h2>
+        <p>Kada banka odobri kredit, ona stvara novac koji ne postoji u fizičkom obliku. Taj novac je zapravo unos u bazu podataka i time povećava količinu novca u opticaju.</p>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHM6xkpx_OTaUhanaAqkA0DW3VKGgLCLHLCg&s" alt="Kredit i digitalni novac">
+      </section>
+
+      <section>
+        <h2>Zanimljivosti</h2>
+        <ul>
+          <li>Preko 90% ukupnog novca danas je digitalno.</li>
+          <li>Banke stvaraju novac kroz kreditiranje, a ne štampanjem.</li>
+          <li>Frakcionalno bankarstvo dopušta bankama da posuđuju višestruko više nego što imaju u rezervi.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Objašnjenje kako SAD magično stvara novac</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/RygikaUoRU4?si=P-2FSW3AMmt8ORp6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </section>
+
+      <section>
+        <h2>Dodatni sadržaj</h2>
+        <iframe name="iframe-sadrzaj" title="Dodatni sadržaj"></iframe>
+
+        <h3 style="margin-top: 40px;">Najbogatiji self-made milijarderi (2025.)</h3>
+        <table style="width: 100%; border-collapse: collapse; margin-top: 20px; background-color: #fff; border-radius: 8px; overflow: hidden;">
+          <thead style="background-color: #355e3b; color: white;">
+            <tr>
+              <th style="padding: 12px; text-align: left;">#</th>
+              <th style="padding: 12px; text-align: left;">Ime</th>
+              <th style="padding: 12px; text-align: left;">Neto vrijednost</th>
+              <th style="padding: 12px; text-align: left;">Izvor bogatstva</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 12px;">1</td>
+              <td style="padding: 12px;">Elon Musk</td>
+              <td style="padding: 12px;">$210+ milijardi</td>
+              <td style="padding: 12px;">Tesla, SpaceX</td>
+            </tr>
+            <tr style="background-color: #f5f5f5;">
+              <td style="padding: 12px;">2</td>
+              <td style="padding: 12px;">Jeff Bezos</td>
+              <td style="padding: 12px;">$190+ milijardi</td>
+              <td style="padding: 12px;">Amazon</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px;">3</td>
+              <td style="padding: 12px;">Mark Zuckerberg</td>
+              <td style="padding: 12px;">$160+ milijardi</td>
+              <td style="padding: 12px;">Meta (Facebook)</td>
+            </tr>
+            <tr style="background-color: #f5f5f5;">
+              <td style="padding: 12px;">4</td>
+              <td style="padding: 12px;">Larry Ellison</td>
+              <td style="padding: 12px;">$150+ milijardi</td>
+              <td style="padding: 12px;">Oracle</td>
+            </tr>
+            <tr>
+              <td style="padding: 12px;">5</td>
+              <td style="padding: 12px;">Larry Page</td>
+              <td style="padding: 12px;">$130+ milijardi</td>
+              <td style="padding: 12px;">Google</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Martina. K | <a href="https://github.com/tvoje-korisnicko-ime">GitHub profil</a></p>
+    </footer>
+  </div>
+
+  <script>
+    function toggleNav() {
+      const sidebar = document.getElementById("mySidebar");
+      const content = document.querySelector(".content");
+      if (sidebar.style.width === "220px") {
+        sidebar.style.width = "0";
+        content.style.marginLeft = "0";
+      } else {
+        sidebar.style.width = "220px";
+        content.style.marginLeft = "220px";
+      }
+    }
+
+    function closeNav() {
+      document.getElementById("mySidebar").style.width = "0";
+      document.querySelector(".content").style.marginLeft = "0";
+    }
+  </script>
+</body>
+</html>
