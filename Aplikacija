@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Konvertor valuta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="file:///C:/Users/PC/Downloads/Dizajn%20bez%20naslova.svg"> 
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdfaf4;
+      margin: 0;
+      padding: 40px 20px;
+      color: #2e2e2e;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      background-color: #fff;
+      border: 1px solid #e0d8c3;
+      border-radius: 12px;
+      padding: 40px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    }
+
+    h1 {
+      color: #355e3b;
+      font-size: 2.4em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .highlight {
+      background-color: #f5e9d3;
+      padding: 20px;
+      border-left: 5px solid #bfa46f;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 0.95em;
+      color: #777;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Konvertor valuta</h1>
+    <p><strong>Konvertor valuta</strong> je edukativna aplikacija koju sam razvila kako bih korisnicima omogućila jednostavnu, intuitivnu i vizualno elegantnu konverziju između različitih svjetskih valuta.</p>
+
+    <div class="highlight">
+      <p><strong>Funkcionalnosti aplikacije:</strong></p>
+      <ul>
+        <li>Unos iznosa koji korisnik želi pretvoriti</li>
+        <li>Odabir početne i ciljne valute (npr. EUR u USD)</li>
+        <li>Korištenje stvarnih tečajeva (fiksno ili putem API-ja)</li>
+        <li>Trenutni izračun s rezultatima</li>
+        <li>Minimalističko i responzivno sučelje</li>
+      </ul>
+    </div>
+
+    <p>Aplikacija je idealna za studente, putnike, poslovne korisnike i sve koji žele brzo obaviti valutnu konverziju bez nepotrebnih komplikacija.</p>
+
+    <img src="https://poslovnisvijet.ba/wp-content/uploads/2021/03/Visa-kriptovaluta.jpg" alt="Ilustracija aplikacije">
+
+    <p class="footer-note">Aplikacija je trenutačno u beta fazi – dodatne funkcije dolaze uskoro!</p>
+  </div>
+</body>
+</html>
